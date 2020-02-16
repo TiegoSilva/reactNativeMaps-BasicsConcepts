@@ -53,6 +53,7 @@ class App extends React.Component{
     return(
       <View style={styles.container}>
         <View>
+
           <MapView
             style={styles.map}
             initialRegion={this.state.region}
@@ -69,12 +70,11 @@ class App extends React.Component{
                 ))
               }
           </MapView>
+
         </View>
 
-              {/* this.state.interestPoints[1].coordinate */}
         <View>
-          <Button onPress={() => this.goToSecondPoint(this.state.interestPoints[1].coordinate)} title="Go to second point"
-          />
+          <Button onPress={() => this.goToSecondPoint(this.state.interestPoints[1].coordinate)} title="Go to second point"/>
         </View>
       </View>
     );
